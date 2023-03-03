@@ -2,7 +2,7 @@
 
 public class GrubsCamera : EntityComponent
 {
-	public readonly FloatRange DistanceRange = new( 128f, 2048f );
+	public readonly FloatRange DistanceRange = new(128f, 2048f);
 	public float Distance { get; set; } = 1024;
 	public float DistanceScrollRate { get; set; } = 32f;
 
@@ -111,8 +111,7 @@ public class GrubsCamera : EntityComponent
 				return;
 			}
 
-			SetTarget( gm?.ActivePlayer?.ActiveGrub );
-			return;
+			SetTarget( gm?.ActivePlayers.First().ActiveGrub );
 		}
 	}
 

@@ -31,7 +31,7 @@ public partial class Player : Entity
 	{
 		get
 		{
-			return GamemodeSystem.Instance.ActivePlayer == this;
+			return GamemodeSystem.Instance.ActivePlayers.Contains( this );
 		}
 	}
 

@@ -6,6 +6,17 @@ public partial class FreeForAll : Gamemode
 	public override bool AllowFriendlyFire => true;
 	public override int MinimumPlayers => GrubsConfig.MinimumPlayers;
 
+	public Player ActivePlayer
+	{
+		get => ActivePlayers.FirstOrDefault();
+
+		set
+		{
+			ActivePlayers.Clear();
+			ActivePlayers.Add( value );
+		}
+	}
+	
 	public enum GameState
 	{
 		Waiting,

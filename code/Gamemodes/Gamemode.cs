@@ -13,14 +13,17 @@ public partial class Gamemode : Entity
 
 	private List<Player> DisconnectedPlayers { get; set; } = new();
 
-	[Net]
-	public Player ActivePlayer { get; set; }
+	[Net] public List<Player> ActivePlayers { get; set; }
 
-	[Net]
-	public Entity CameraTarget { get; set; }
+	public virtual Entity CameraTarget
+	{
+		get => NetworkedCameraTarget;
+		protected set => NetworkedCameraTarget = value;
+	}
 
-	[Net]
-	public World GameWorld { get; set; }
+	[Net] public Entity NetworkedCameraTarget { get; set; }
+
+	[Net] public World GameWorld { get; set; }
 
 	/// <summary>
 	/// Whether or not the turn is currently changing.
