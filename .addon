@@ -247,11 +247,15 @@
           {
             "Value": "FreeForAll",
             "Name": "Free For All"
+          },
+          {
+            "Value": "EverybodyGrubs",
+            "Name": "Everybody Grubs"
           }
         ],
         "ConVarName": "grubs_game",
         "DisplayName": "Gamemode",
-        "DefaultValue": "FreeForAll",
+        "DefaultValue": "EverybodyGrubs",
         "Description": "",
         "Group": "Game"
       },
