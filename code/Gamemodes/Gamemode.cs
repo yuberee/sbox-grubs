@@ -13,7 +13,7 @@ public partial class Gamemode : Entity
 
 	private List<Player> DisconnectedPlayers { get; set; } = new();
 
-	[Net] public List<Player> ActivePlayers { get; set; }
+	[Net] public List<Player> ActivePlayers { get; set; } = new();
 
 	public virtual Entity CameraTarget
 	{

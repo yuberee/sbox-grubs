@@ -111,7 +111,9 @@ public class GrubsCamera : EntityComponent
 				return;
 			}
 
-			SetTarget( gm?.ActivePlayers.First().ActiveGrub );
+			var target = gm?.ActivePlayers.FirstOrDefault()?.ActiveGrub;
+			if ( target != null )
+				SetTarget( gm?.ActivePlayers.FirstOrDefault()?.ActiveGrub );
 		}
 	}
 
