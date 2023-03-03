@@ -1,4 +1,6 @@
-﻿namespace Grubs;
+﻿using Grubs.Modes.FFA;
+
+namespace Grubs;
 
 public partial class FreeForAll : Gamemode
 {
@@ -74,6 +76,8 @@ public partial class FreeForAll : Gamemode
 	{
 		base.Initialize();
 
+		Game.RootPanel.AddChild<TurnPanel>();
+		
 		CurrentState = GameState.Waiting;
 	}
 
