@@ -141,17 +141,6 @@ public static class GrubsConfig
 		Texture = 1,
 	}
 
-	public enum TerrainTexture
-	{
-		Grubs = 0,
-		Islands = 1,
-		AntFarm = 2,
-		Cavern = 3,
-		Bunkers = 4,
-		AICavern = 5,
-		Hightower = 6,
-	}
-
 	/// <summary>
 	/// The type of terrain to use.
 	/// </summary>
@@ -163,5 +152,6 @@ public static class GrubsConfig
 	/// prefabricated texture is used to build the terrain.
 	/// </summary>
 	[ConVar.Replicated( "terrain_texture" )]
-	public static TerrainTexture WorldTerrainTexture { get; set; } = TerrainTexture.Grubs;
+	public static string WorldTerrainTexture { get; set; } = "grubs";
+	public static string TerrainTextureCustom = "custom";
 }

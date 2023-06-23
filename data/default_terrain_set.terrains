@@ -1,0 +1,46 @@
+{
+  "Terrains": [
+    {
+      "Id": "grubs",
+      "Name": "Grubs Logo",
+      "Foreground": "textures/texturelevels/grubs.png",
+      "Background": "textures/texturelevels/grubs_back.png"
+    },
+    {
+      "Id": "high_tower",
+      "Name": "Hightower",
+      "Foreground": "textures/texturelevels/hightower.png",
+      "Background": "textures/texturelevels/hightower_back.png"
+    },
+    {
+      "Id": "islands",
+      "Name": "Islands",
+      "Foreground": "textures/texturelevels/islands.png",
+      "Background": "textures/texturelevels/islands_back.png"
+    },
+    {
+      "Id": "ant_farm",
+      "Name": "Ant Farm",
+      "Foreground": "textures/texturelevels/antfarm.png",
+      "Background": "textures/texturelevels/antfarm_back.png"
+    },
+    {
+      "Id": "cavern",
+      "Name": "Cavern",
+      "Foreground": "textures/texturelevels/cavern.png",
+      "Background": "textures/texturelevels/cavern_back.png"
+    },
+    {
+      "Id": "ai_cavern",
+      "Name": "AI Cavern",
+      "Foreground": "textures/texturelevels/aicavern.png",
+      "Background": "textures/texturelevels/aicavern_back.png"
+    },
+    {
+      "Id": "bunkers",
+      "Name": "Bunkers",
+      "Foreground": "textures/texturelevels/bunkers.png",
+      "Background": "textures/texturelevels/bunkers_back.png"
+    }
+  ]
+}

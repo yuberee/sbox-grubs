@@ -26,11 +26,14 @@ public sealed partial class GrubsGame : GameManager
 	/// </summary>
 	[Net] public IDictionary<Color, bool> PlayerColors { get; private set; }
 
+	public static TerrainSet DefaultTerrainSet;
+
 	public GrubsGame()
 	{
 		if ( Game.IsClient )
 		{
 			_ = new UI.GrubsHud();
+			DefaultTerrainSet = ResourceLibrary.Get<TerrainSet>( "data/default_terrain_set.terrains" );
 		}
 		else
 		{
